@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SelfHostBackend.Cors;
+using System;
 using System.ServiceModel;
 using System.ServiceModel.Description;
 
@@ -23,6 +24,7 @@ namespace SelfHostBackend
 
 				var endpoint = host.AddServiceEndpoint(typeof(IRestService<ToDoTask>), new WebHttpBinding(), "Tasks");
 				endpoint.EndpointBehaviors.Add(webBehaviour);
+				endpoint.EndpointBehaviors.Add(new BehaviorAttribute());
 
 				// Open the ServiceHost to start listening for messages. Since
 				// no endpoints are explicitly configured, the runtime will create

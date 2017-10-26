@@ -48,6 +48,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cors\BehaviorAttribute.cs" />
+    <Compile Include="Cors\MessageInspector.cs" />
     <Compile Include="CreatingTask.cs" />
     <Compile Include="DeleteTask.cs" />
     <Compile Include="EditTask.cs" />
