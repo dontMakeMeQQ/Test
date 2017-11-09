@@ -11,7 +11,7 @@
 <body>
 
 	<input type="text" id="text" />
-	<button onclick="myFunction()" id="clear">Dodaj</button>
+	<button onclick="addNewTask()" id="clear">Dodaj</button>
 
 
 	<p1 hidden id="validation">Wypełnij pole!</p1>
@@ -20,14 +20,15 @@
 	</p>
 
 	<ul id="list">
-		<li id="z1" >Zad1</li>
-		<li id="z2" >Zad2</li>
+		<li></li>
+		
 	</ul>
 
-
-
-
-	<script src="script.js"></script>
+<button onclick = "ShowAllTasks()">Try it</button>
+<script src="script.js"></script>
+<script >
+loadAllTasks();
+</script>
 </body>
 
 </html>
